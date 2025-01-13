@@ -11,7 +11,8 @@ void print_(char c, char a)
 
 int main(int argc, char **argv)
 {
-	int (i), (j);
+	int	i;
+	int j;
 
 	if (argc == 2)
 	{
