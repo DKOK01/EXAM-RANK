@@ -22,38 +22,38 @@ int	ft_atoi(const char *str)
 	}
 	return (result * signe);
 }
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-int main()
-{
-	printf("Test 1: '     42'\n");
-	printf("Expected: %d\n", atoi("     42"));
-	printf("Result: %d\n\n", ft_atoi("     42"));
+// int main()
+// {
+// 	printf("Test 1: '     42'\n");
+// 	printf("Expected: %d\n", atoi("     42"));
+// 	printf("Result: %d\n\n", ft_atoi("     42"));
 
-	printf("Test 2: '-42'\n");
-	printf("Expected: %d\n", atoi("-42"));
-	printf("Result: %d\n\n", ft_atoi("-42"));
+// 	printf("Test 2: '-42'\n");
+// 	printf("Expected: %d\n", atoi("-42"));
+// 	printf("Result: %d\n\n", ft_atoi("-42"));
 
-	printf("Test 3: '+42'\n");
-	printf("Expected: %d\n", atoi("+42"));
-	printf("Result: %d\n\n", ft_atoi("+42"));
+// 	printf("Test 3: '+42'\n");
+// 	printf("Expected: %d\n", atoi("+42"));
+// 	printf("Result: %d\n\n", ft_atoi("+42"));
 
-	printf("Test 4: '   -42abc'\n");
-	printf("Expected: %d\n", atoi("   -42abc"));
-	printf("Result: %d\n\n", ft_atoi("   -42abc"));
+// 	printf("Test 4: '   -42abc'\n");
+// 	printf("Expected: %d\n", atoi("   -42abc"));
+// 	printf("Result: %d\n\n", ft_atoi("   -42abc"));
 
-	printf("Test 5: 'abc42'\n");
-	printf("Expected: %d\n", atoi("abc42"));
-	printf("Result: %d\n\n", ft_atoi("abc42"));
+// 	printf("Test 5: 'abc42'\n");
+// 	printf("Expected: %d\n", atoi("abc42"));
+// 	printf("Result: %d\n\n", ft_atoi("abc42"));
 
-	printf("Test 6: '2147483647'\n");
-	printf("Expected: %d\n", atoi("2147483647"));
-	printf("Result: %d\n\n", ft_atoi("2147483647"));
+// 	printf("Test 6: '2147483647'\n");
+// 	printf("Expected: %d\n", atoi("2147483647"));
+// 	printf("Result: %d\n\n", ft_atoi("2147483647"));
 
-	printf("Test 7: '-2147483648'\n");
-	printf("Expected: %d\n", atoi("-2147483648"));
-	printf("Result: %d\n\n", ft_atoi("-2147483648"));
+// 	printf("Test 7: '-2147483648'\n");
+// 	printf("Expected: %d\n", atoi("-2147483648"));
+// 	printf("Result: %d\n\n", ft_atoi("-2147483648"));
 
-	return 0;
-}
+// 	return 0;
+// }
