@@ -23,10 +23,3 @@ char	*ft_strrev(char *str)
 	}
 	return (str);
 }
-#include <stdio.h>
-
-int main ()
-{
-	char str[] = "123456789";
-	printf("%s\n", ft_strrev(str));
-}

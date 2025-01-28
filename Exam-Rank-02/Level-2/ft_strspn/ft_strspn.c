@@ -20,16 +20,16 @@ size_t	ft_strspn(const char *s, const char *accept)
 	}
 	return (i);
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-	const char *s = "abcdef123456";
-	const char *accept = "abc";
-	size_t result;
+// int main()
+// {
+// 	const char *s = "abcdef123456";
+// 	const char *accept = "abc";
+// 	size_t result;
 
-	result = ft_strspn(s, accept);
-	printf("The length of the initial segment of s which consists only of characters in accept is: %zu\n", result);
+// 	result = ft_strspn(s, accept);
+// 	printf("The length of the initial segment of s which consists only of characters in accept is: %zu\n", result);
 
-	return 0;
-}
+// 	return 0;
+// }
