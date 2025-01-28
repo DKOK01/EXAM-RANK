@@ -1,12 +1,10 @@
 #include <stdlib.h>
 
-// Helper function to check if a character is a delimiter
 int		is_delimiter(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n');
 }
 
-// Helper function to count the number of words in the string
 int		count_words(char *str)
 {
 	int count = 0;
@@ -26,7 +24,6 @@ int		count_words(char *str)
 	return (count);
 }
 
-// Helper function to allocate and copy a word
 char	*copy_word(char *start, int len)
 {
 	char *word = malloc((len + 1) * sizeof(char));
@@ -42,7 +39,6 @@ char	*copy_word(char *start, int len)
 	return (word);
 }
 
-// Main split function
 char	**ft_split(char *str)
 {
 	int word_count = count_words(str);
@@ -53,29 +49,21 @@ char	**ft_split(char *str)
 	int i = 0;
 	while (*str)
 	{
-		// Skip delimiters
 		while (is_delimiter(*str))
 			str++;
-
-		// Find the start of a word
 		if (*str)
 		{
 			char *start = str;
 			int len = 0;
-
-			// Find the length of the word
 			while (*str && !is_delimiter(*str))
 			{
 				str++;
 				len++;
 			}
-
-			// Copy the word into the result array
 			result[i++] = copy_word(start, len);
 		}
 	}
-
-	result[i] = NULL; // Null-terminate the array
+	result[i] = NULL;
 	return (result);
 }
 
