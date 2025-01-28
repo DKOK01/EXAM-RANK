@@ -11,14 +11,14 @@ unsigned char	reverse_bits(unsigned char octet)
 	}
 	return (reversed);
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(void)
-{
-	unsigned char value = 65; // Binary: 0100 0001
-	unsigned char result = reverse_bits(value);
+// int main(void)
+// {
+// 	unsigned char value = 65; // Binary: 0100 0001
+// 	unsigned char result = reverse_bits(value);
 
-	printf("Reversed: %u\n", result); // Should print 130 (Binary: 1000 0010)
+// 	printf("Reversed: %u\n", result); // Should print 130 (Binary: 1000 0010)
 
-	return 0;
-}
+// 	return 0;
+// }

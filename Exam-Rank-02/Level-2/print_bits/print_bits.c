@@ -14,9 +14,9 @@ void print_bits(unsigned char octet)
 	printf("\n");
 }
 
-int main()
-{
-	unsigned char octet = 2;//00000010
-	print_bits(octet);
-	return 0;
-}
+// int main()
+// {
+// 	unsigned char octet = 2;//00000010
+// 	print_bits(octet);
+// 	return 0;
+// }
